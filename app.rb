@@ -16,7 +16,7 @@ get('/result') do
 
   if user_case_triangle.is_triangle?
     if user_case_triangle.equilateral?
-      @result_triangle = "Equalateral Triangle"
+      @result_triangle = "Equilateral Triangle"
     elsif user_case_triangle.isosceles?
       @result_triangle = "Isosceles Triangle"
     elsif user_case_triangle.scalene?
