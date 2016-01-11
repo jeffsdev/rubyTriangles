@@ -21,9 +21,11 @@ class Triangle
        return false
      end
      return true
-
    end
 
+   define_method(:is_triangle?) do
+     return  !( (@a + @b) <= @c || (@b + @c) <= @a || (@c + @a) <= @b )
+   end
 
 
 end
