@@ -5,7 +5,7 @@ Check to make sure user input is a valid triangle. If it is, return what type of
 
 ## Use
 
-`git clone` -- Add link to repository --
+`git clone https://github.com/Vawx/triangles_sinatra`
 
 Run `bundle install`
 
