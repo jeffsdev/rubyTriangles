@@ -16,4 +16,14 @@ class Triangle
      return (@a == @b) || (@a == @c) || (@b == @c)
    end
 
+   define_method(:scalene?) do
+     if self.equilateral? || self.isoceles?
+       return false
+     end
+     return true
+
+   end
+
+
+
 end
