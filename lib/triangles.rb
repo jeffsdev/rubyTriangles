@@ -1,15 +1,16 @@
+require('pry')
 class Triangle
   define_method(:initialize) do |a, b, c|
-    @a = a
-    @b = b
-    @c = c
+    @a = a.to_i
+    @b = b.to_i
+    @c = c.to_i
    end
 
    define_method(:equilateral?) do
      return (@a == @b) && (@b == @c)
    end
 
-   define_method(:isoceles?) do
+   define_method(:isosceles?) do
      if self.equilateral?
        return false
      end
@@ -17,7 +18,7 @@ class Triangle
    end
 
    define_method(:scalene?) do
-     if self.equilateral? || self.isoceles?
+     if self.equilateral? || self.isosceles?
        return false
      end
      return true

@@ -8,7 +8,7 @@ describe("Triangle#triangle") do
   end
   it("creates an instance of the triangle class and check that it is isoceles") do
     isoceles_triangle = Triangle.new(2,2,3)
-    expect(isoceles_triangle.isoceles?).to(equal(true))
+    expect(isoceles_triangle.isosceles?).to(equal(true))
   end
   it("creates an instance of the triangle class and check that it is scalene") do
     scalene_triangle = Triangle.new(2,3,4)
